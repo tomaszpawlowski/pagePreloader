@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Krona One', sans-serif;
+}
+div#pagePreloader {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: crimson;
+    background: linear-gradient(0deg, rgba(220,20,60,1) 0%, rgba(240,40,80,1) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2em;
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 1.5s, opacity 0.5s linear 0s;
+}
+div#pagePreloader hr {
+    height: 2px;
+    width: 0%;
+    border: 0px none transparent;
+    background-color: teal;
+    text-align: left;
+    margin-left: 0px;
+    transition: width 0.5s ease-in-out 0.2s;
+}
+img{
+    width: 100%;
+    margin: 2em 0em;
+}
