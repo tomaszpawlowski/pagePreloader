@@ -1,10 +1,9 @@
 window.addEventListener('DOMContentLoaded', () => {
     var
         preloader = document.getElementById('pagePreloader'),
-        preloaderProgressBar = document.querySelector('div#pagePreloader hr'),
-        preloaderProgressBarInfo = document.querySelector('div#pagePreloader h3'),
+        preloaderProgressBar = preloader.querySelector('hr'),
+        preloaderProgressBarInfo = preloader.querySelector('h3'),
         allHtmlBodyElementsWithSource = document.querySelectorAll('body *[src]');
-    
     if (allHtmlBodyElementsWithSource.length > 0) {
         var loadedHtmlBodyElementsWithSource = 0;
         preloader.style.opacity = 1;
